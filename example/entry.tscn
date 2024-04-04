@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://1kxf7x670ryb"]
+
+[ext_resource type="Script" path="res://example/entry.gd" id="1_8lgru"]
+
+[node name="Entry" type="Node2D"]
+script = ExtResource("1_8lgru")
+
+[node name="TitleLabel" type="Label" parent="."]
+offset_right = 23.0
+offset_bottom = 23.0
+text = "Title"
+
+[node name="ContentLabel" type="Label" parent="."]
+offset_top = 20.0
+offset_right = 23.0
+offset_bottom = 43.0
+text = "Content"
