@@ -9,9 +9,8 @@ extends Node
 # Returns:
 # - The value found in the nested Dictionary, or null if not found
 func deep(_object: Dictionary, _key: String):
-	var _val = ''  # Initialize result value
 	var _obj = _object  # Initialize object to search
-	var _keys: PackedStringArray = _key.rsplit('.')  # Split the key string into an array of keys
+	var _keys = _key.rsplit('.')  # Split the key string into an array of keys
 	
 	for _k in _keys:  # Iterate over the keys
 		if _obj.has(_k):  # If the current key exists in the object
